@@ -52,6 +52,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FormReporteDeFacturas";
             this.Text = "Reporte De Facturas";
+            this.Load += new System.EventHandler(this.FormReporteDeFacturas_Load);
             this.ResumeLayout(false);
 
         }

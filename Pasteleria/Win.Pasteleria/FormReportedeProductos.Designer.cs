@@ -52,7 +52,8 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FormReportedeProductos";
             this.Text = "Reporte de Productos";
-                       this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FormReportedeProductos_Load);
+            this.ResumeLayout(false);
 
         }
 

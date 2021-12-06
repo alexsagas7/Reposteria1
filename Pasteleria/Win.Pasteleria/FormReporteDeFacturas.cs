@@ -26,5 +26,10 @@ namespace Win.Pasteleria
             crystalReportViewer1.ReportSource = reporte;
             crystalReportViewer1.RefreshReport();
         }
+
+        private void FormReporteDeFacturas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

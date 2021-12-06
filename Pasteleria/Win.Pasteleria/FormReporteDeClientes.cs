@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Reposteria;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace Win.Pasteleria
         public FormReporteDeClientes()
         {
             InitializeComponent();
+            var _clientesBL = new ClientesBL();
+            var BindingSource = new BindingSource();
+            BindingSource.DataSource = _clientesBL.ObtenerClientes();
+
+            var reporte = new ReporteClientes();
+            reporte.SetDataSource(BindingSource);
+
+            crystalReportViewer1.ReportSource = reporte;
+            crystalReportViewer1.RefreshReport();
         }
     }
 }

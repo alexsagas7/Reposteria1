@@ -27,6 +27,9 @@ namespace Win.Pasteleria
             crystalReportViewer1.RefreshReport();
         }
 
-        
+        private void FormReportedeProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
