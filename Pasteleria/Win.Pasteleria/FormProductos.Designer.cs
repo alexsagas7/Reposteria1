@@ -408,7 +408,6 @@
             // 
             // listaCategoriasBindingSource
             // 
-            this.listaCategoriasBindingSource.DataSource = typeof(Categoria);
             // 
             // tiposBLBindingSource
             // 
@@ -436,7 +435,7 @@
             // 
             // categoriaIdComboBox
             // 
-            this.categoriaIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaProductosBindingSource, "CategoriaId", true));
+            this.categoriaIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaProductosBindingSource, "CategoriaId", true));
             this.categoriaIdComboBox.DataSource = this.listaCategoriasBindingSource;
             this.categoriaIdComboBox.DisplayMember = "Descripcion";
             this.categoriaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -447,6 +446,7 @@
             this.categoriaIdComboBox.Size = new System.Drawing.Size(160, 33);
             this.categoriaIdComboBox.TabIndex = 17;
             this.categoriaIdComboBox.ValueMember = "Id";
+            this.categoriaIdComboBox.SelectedIndexChanged += new System.EventHandler(this.categoriaIdComboBox_SelectedIndexChanged);
             // 
             // FormProductos
             // 

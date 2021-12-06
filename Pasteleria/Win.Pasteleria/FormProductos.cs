@@ -182,5 +182,10 @@ namespace Win.Pasteleria
         {
 
         }
+
+        private void categoriaIdComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

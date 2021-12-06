@@ -40,7 +40,11 @@ namespace Win.Pasteleria
             usuario = textBox1.Text;
             contraseña = textBox2.Text;
 
-           var resultado = _seguridad.autorizar(usuario, contraseña);
+            button1.Enabled = false;
+            button1.Text = "Verificando...";
+            Application.DoEvents();
+
+            var resultado = _seguridad.autorizar(usuario, contraseña);
             if (resultado == true)
             {
                 this.Close();

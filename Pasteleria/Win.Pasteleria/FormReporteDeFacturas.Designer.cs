@@ -1,6 +1,6 @@
 ﻿namespace Win.Pasteleria
 {
-    partial class FormReportedeProductos
+    partial class FormReporteDeFacturas
     {
         /// <summary>
         /// Required designer variable.
@@ -40,19 +40,19 @@
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ShowGroupTreeButton = false;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(813, 509);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(610, 585);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // FormReportedeProductos
+            // FormReporteDeFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 509);
+            this.ClientSize = new System.Drawing.Size(610, 585);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FormReportedeProductos";
-            this.Text = "Reporte de Productos";
-                       this.ResumeLayout(false);
+            this.Name = "FormReporteDeFacturas";
+            this.Text = "Reporte De Facturas";
+            this.ResumeLayout(false);
 
         }
 

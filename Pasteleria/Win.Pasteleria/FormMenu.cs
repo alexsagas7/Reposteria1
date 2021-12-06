@@ -71,26 +71,20 @@ namespace Win.Pasteleria
             FormReporteDeClientes.Show();
         }
 
-        private void reporteDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var FormReporteDeProveedores = new FormReporteDeProveedores();
-            FormReporteDeProveedores.MdiParent = this;
-            FormReporteDeProveedores.Show();
-        }
-
-        private void reporteDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var FormReporteDeVentas = new FormReporteDeVentas();
-            FormReporteDeVentas.MdiParent = this;
-            FormReporteDeVentas.Show();
-
-        }
-
-        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+       
+              private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var formFactura = new FormFactura();
             formFactura.MdiParent = this;
             formFactura.Show();
+        }
+
+        private void reporteDeFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FormReporteDeFacturas = new FormReporteDeFacturas();
+            FormReporteDeFacturas.MdiParent = this;
+            FormReporteDeFacturas.Show();
+
         }
     }
 }
